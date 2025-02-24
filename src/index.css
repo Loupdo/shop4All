@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.userNameImput {
+  text-align: center;
+  margin-top: 20%;
+}
+.addMargin {
+  margin-top: 200px;
+}
+.addToCart {
+  margin-top: 20px;
+}
+h2 {
+  width: 100%;
+  text-align: right;
+}
+.shopLogo {
+  font-family: "Dancing Script", cursive;
+  font-size: 300px;
+}
+.figure {
+  width: 95%;
+  border-radius: 25px;
+}
