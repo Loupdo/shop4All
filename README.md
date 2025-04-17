@@ -1,4 +1,4 @@
-# 🛍️ React Shop App
+# 🛍️ React Shop App (shop4All)
 
 This is a basic shopping app built with **React** using the **Context API** for global state management.
 Shop simulated with fakestoreapi.com .
@@ -23,7 +23,7 @@ It uses **Formik + Yup** for form handling and validation, and **localStorage** 
 
 ### Clone the repo
 git clone https://github.com/loupdo/shop4All.git
-cd react-shop-app
+cd shop4All
 
 ### Install dependencies
 npm install
