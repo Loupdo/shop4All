@@ -21,17 +21,17 @@ It uses **Formik + Yup** for form handling and validation, and **localStorage** 
 
 ## 🛠️ Installation
 
-# Clone the repo
-git clone https://github.com/your-username/react-shop-app.git
+### Clone the repo
+git clone https://github.com/loupdo/shop4All.git
 cd react-shop-app
 
-# Install dependencies
+### Install dependencies
 npm install
 
-# Start App
+### Start App
 npm start
 
-### 🧠 State Management
+## 🧠 State Management
 
 State is handled globally using React Context and includes:
 
@@ -46,7 +46,7 @@ visible: Controls visibility of login/register modal
 A custom useShop() hook provides access to these values anywhere in the app.
 
 
-### 🔐 Authentication Logic
+## 🔐 Authentication Logic
 
 Register: Creates a new user and stores in localStorage
 
@@ -54,7 +54,7 @@ Sign In: Matches email + password from stored users
 
 Logout: Clears userName, resets total to 0, and updates visible to show login again
 
-### 🧰 Form Validation
+## 🧰 Form Validation
 
 All forms are built with Formik and validated using Yup, ensuring:
 
@@ -64,7 +64,7 @@ Minimum 8-character passwords
 
 Required fields
 
-### 🔓 Logout Behavior
+## 🔓 Logout Behavior
 
 Clicking "Logout" will:
 
@@ -74,3 +74,7 @@ Reset total to 0
 
 Toggle UI back to login state
 
+
+# 🛍️ try the App
+
+https://shop-4-all.vercel.app/products
