@@ -25,7 +25,7 @@ export default function SigninForm() {
           setUserName(user.firstName);
           setVisible(false);
         } else {
-          alert("This is the worng password");
+          alert("This is the wrong password");
         }
       } else {
         alert("This account does not exist, please register");
