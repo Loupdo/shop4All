@@ -1,4 +1,4 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, useEffect } from "react";
 
 const ShopContext = createContext();
 
@@ -11,6 +11,9 @@ export function ShopProvider({ children }) {
   });
   const [userName, setUserName] = useState("");
   const [visible, setVisible] = useState(userName === "");
+  useEffect(() => {
+    localStorage.setItem("users", JSON.stringify(users));
+  }, [users]);
 
   return (
     <ShopContext.Provider

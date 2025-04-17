@@ -1,6 +1,7 @@
 # 🛍️ React Shop App
 
 This is a basic shopping app built with **React** using the **Context API** for global state management.
+Shop simulated with fakestoreapi.com .
 The app allows users to register, sign in, and track their cart total.
 It uses **Formik + Yup** for form handling and validation, and **localStorage** to persist data between sessions.
 
