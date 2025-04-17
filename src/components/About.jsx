@@ -1,4 +1,4 @@
-import { useShop } from "../components/ShopContext.jsx";
+import { useShop } from "../context/ShopContext.jsx";
 import NavBar from "../routes/NavBar";
 import Figure from "react-bootstrap/Figure";
 

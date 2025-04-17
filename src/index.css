@@ -16,9 +16,28 @@ h2 {
 }
 .shopLogo {
   font-family: "Dancing Script", cursive;
-  font-size: 300px;
+  font-size: 30pt;
 }
 .figure {
   width: 95%;
   border-radius: 25px;
+}
+.error {
+  font-size: 10pt;
+  color: red;
+}
+
+.formRegisteration {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 40px auto;
+}
+.formRegisteration > input,
+.formLogin > input {
+  margin-bottom: 20px;
+}
+.formLogin {
+  display: flex;
+  flex-direction: column;
 }

@@ -10,7 +10,8 @@ import "./index.css";
 import Home from "./components/Home.jsx";
 import Products from "./components/Products.jsx";
 import About from "./components/About.jsx";
-import { ShopProvider } from "./components/ShopContext.jsx";
+import Register from "./components/Register.jsx";
+import { ShopProvider } from "./context/ShopContext.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "products",
     element: <Products />,
+  },
+  {
+    path: "register",
+    element: <Register />,
   },
   {
     path: "about",

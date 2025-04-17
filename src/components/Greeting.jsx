@@ -1,4 +1,4 @@
-import { useShop } from "../components/ShopContext.jsx";
+import { useShop } from "../context/ShopContext.jsx";
 
 export default function Greeting() {
   const { userName } = useShop();
