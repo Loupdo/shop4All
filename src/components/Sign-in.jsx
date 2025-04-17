@@ -19,13 +19,14 @@ export default function SigninForm() {
         .min(8, "Must contain at least 8 characters"),
     }),
     onSubmit: (values) => {
-      const user = users.find(
-        (user) =>
-          user.email === values.email && user.password === values.password
-      );
+      const user = users.find((user) => user.email === values.email);
       if (user) {
-        setUserName(user.firstName);
-        setVisible(false);
+        if (user.password === values.password) {
+          setUserName(user.firstName);
+          setVisible(false);
+        } else {
+          alert("This is the worng password");
+        }
       } else {
         alert("This account does not exist, please register");
       }
