@@ -1,6 +1,8 @@
 # 🛍️ React Shop App
 
-This is a basic shopping app built with **React** using the **Context API** for global state management. The app allows users to register, sign in, and track their cart total. It uses **Formik + Yup** for form handling and validation, and **localStorage** to persist data between sessions.
+This is a basic shopping app built with **React** using the **Context API** for global state management.
+The app allows users to register, sign in, and track their cart total.
+It uses **Formik + Yup** for form handling and validation, and **localStorage** to persist data between sessions.
 
 ---
 
@@ -9,7 +11,7 @@ This is a basic shopping app built with **React** using the **Context API** for 
 - 🔐 User registration and login with form validation
 - ✅ Formik + Yup for robust form handling
 - 🧠 React Context API for global state (users, cart total, login status)
-- 💾 Persistent user and session data via `localStorage`
+- 💾 Persistent user data via `localStorage`
 - 🔓 Logout button that resets the cart total
 - 🛒 Add to cart functionality (adds product price to cart total)
 - 🌐 React Router navigation
@@ -35,7 +37,7 @@ State is handled globally using React Context and includes:
 users: All registered users
 
 userName: Currently signed-in user's name
-
+ 
 total: Shopping cart total
 
 visible: Controls visibility of login/register modal
