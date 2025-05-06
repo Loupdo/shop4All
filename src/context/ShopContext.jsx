@@ -7,7 +7,18 @@ export function ShopProvider({ children }) {
   const [total, setTotal] = useState(0);
   const [users, setUsers] = useState(() => {
     const storedUsers = localStorage.getItem("users");
-    return storedUsers ? JSON.parse(storedUsers) : [];
+    if (storedUsers) {
+      return JSON.parse(storedUsers);
+    } else {
+      const defaultUsers = [
+        {
+          email: "testThisApp@gmail.com",
+          password: "PasswrdTe$t",
+        },
+      ];
+      localStorage.setItem("users", JSON.stringify(defaultUsers));
+      return defaultUsers;
+    }
   });
   const [userName, setUserName] = useState("");
   const [visible, setVisible] = useState(userName === "");
