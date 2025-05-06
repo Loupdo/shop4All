@@ -9,8 +9,8 @@ export default function SigninForm() {
   const { users, setUserName, setVisible } = useShop();
   const formik = useFormik({
     initialValues: {
-      email: "",
-      password: "",
+      email: "testThisApp@gmail.com",
+      password: "Passw0rdTe$t",
     },
     validationSchema: Yup.object({
       email: Yup.string().required("Required").email("Enter a valid email"),
