@@ -12,8 +12,9 @@ export function ShopProvider({ children }) {
     } else {
       const defaultUsers = [
         {
+          firstName: "tester",
           email: "testThisApp@gmail.com",
-          password: "PasswrdTe$t",
+          password: "Passw0rdTe$t",
         },
       ];
       localStorage.setItem("users", JSON.stringify(defaultUsers));
